@@ -21,6 +21,8 @@
 
 </head>
 <body>
+
+    <!-- *ANCHOR  barra di navigazione -->
     <div class="main container-fluid p-0">
         <header  class="px-2" style="height: 80px;">
             <nav class="navbar flex-nowrap w-100">
@@ -42,15 +44,14 @@
                             </form>
                         </div>
                         <div class="col-1 p-0 col-md-2 d-flex justify-content-center">
-
                             <div class="dropdown d-flex">
                                 <button class="bg-white border border-0 d-none  d-lg-block">
                                     <i class="fa-solid fa-list-ul"></i>
                                 </button>
-                                <button class="bg-white border border-0 d-none  d-lg-block px-2">
+                                <button class="bg-white border border-0 d-none  d-lg-block ">
                                     <i class="fa-solid fa-circle-question" style="color: #606060;"></i>
                                 </button>
-                                <button class="bg-white border border-0 d-none  d-lg-block px-2">
+                                <button class="bg-white border border-0 d-none  d-lg-block ">
                                     <i class="fa-solid fa-ellipsis-vertical" style="color: #7a7a7a;"></i>
                                 </button>
                                 <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,7 +68,9 @@
                 </div>
             </nav>
         </header>
-        <main class="position-relative">
+        <main class="position-relative overflow-auto">
+
+            <!-- *ANCHOR  sidebar -->
             <aside class="text-light text-center">
                 <ul class="mb-5 p-2">
                     <li class="d-flex gap-2 py-1 justify-content-center align-content-center"><i class="fa-solid fa-house d-inline"></i><span class="d-none d-lg-block"> home</span></li>
@@ -79,7 +82,9 @@
 
                 </ul>
             </aside>
-            <div class="center px-1 overflow-auto" style="height:calc(100vh - 80px);">
+
+             <!-- *ANCHOR -  header Boolean -->
+            <div class="center px-1 overflow-auto" style=" height: calc(100vh - 80px)";>
                 <div class="row  bg-primary text-light">
                     <div class="col-12 col-sm-4">
                         <span>nuovo studente</span>
@@ -95,141 +100,180 @@
                         <div>125</div>
                     </div>
                 </div>
-                <div class="p-4">
-                    <div class="text-dark bg-secondary bg-opacity-10 p-2 rounded-top border">prossime classi</div>
-                        <table class="table table-hover border">
-                            <thead>
-                              <tr class="text-capitalize">
-                                <th scope="col">nome</th>
-                                <th scope="col">data inizio</th>
-                                <th scope="col">ROI</th>
-                                <th scope="col">stato</th>
-                                <th scope="col">azioni</th>
-                              </tr>
-                            </thead>
-                            <tbody class="text-capitalize">
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 75</td>
-                                <td>15 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-success mt-2">done</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 76</td>
-                                <td>16 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-success mt-2">done</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 77</td>
-                                <td>17 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-warning mt-2">process</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 78</td>
-                                <td>18 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-success mt-2">done</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 79</td>
-                                <td>19 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-danger mt-2">failed</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 80</td>
-                                <td>20 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-success mt-2">done</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 81</td>
-                                <td>21 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-danger mt-2">failed</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                              <tr py-4>
-                                <td><i class="fa-solid fa-code"></i> classe 82</td>
-                                <td>22 feb 2021</td>
-                                <td>20%</td>
-                                <td class="badge text-bg-success mt-2">done</td>
-                                <td>
-                                    <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
-                                    <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                        <div class="text-dark bg-secondary bg-opacity-10 rounded-top border">
-                            <div class="text-dark bg-secondary bg-opacity-10 p-2 rounded-top border"><strong>F.A.Q</strong></div>
-                            <div class="accordion accordion-flush" id="accordionExample">
+
+                <!-- *ANCHOR -  classi e F.A.Q. -->
+
+                <!-- prossime classi  -->
+                <div class="p-4 overflow-auto">
+                    <div class="text-dark bg-secondary bg-opacity-10 p-2 rounded-top border"><h3>prossime classi</h3></div>
+                    <table class="table table-hover border">
+                        <thead>
+                          <tr class="text-capitalize">
+                            <th scope="col">nome</th>
+                            <th scope="col">data inizio</th>
+                            <th scope="col">ROI</th>
+                            <th scope="col">stato</th>
+                            <th scope="col">azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-capitalize">
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 75</td>
+                            <td>15 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-success mt-2">done</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 76</td>
+                            <td>16 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-success mt-2">done</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 77</td>
+                            <td>17 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-warning mt-2 border">process</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 78</td>
+                            <td>18 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-success mt-2">done</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 79</td>
+                            <td>19 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-danger mt-2">failed</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 80</td>
+                            <td>20 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-success mt-2">done</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 81</td>
+                            <td>21 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-danger mt-2">failed</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fa-solid fa-code"></i> classe 82</td>
+                            <td>22 feb 2021</td>
+                            <td>20%</td>
+                            <td class="badge text-bg-success mt-2">done</td>
+                            <td>
+                                <i class="fa-solid fa-pen rounded border p-2" style="color: #929292;"></i>
+                                <i class="fa-solid fa-trash rounded border p-2" style="color: #929292;"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- F.A.Q -->
+                    <div class="text-dark bg-secondary bg-opacity-10 rounded-top border">
+                        <div class="text-dark bg-secondary bg-opacity-10 p-2 rounded-top border"><h3>F.A.Q</h3></div>
+                        <div class="accordion accordion-flush" id="accordionExample">
                             <div class="accordion-item ">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"     data-bs-target="#collapseOne"aria-expanded="true"     aria-controls="collapseOne">
-                                Come aggiungere un nuovo studente? 
-                                </button>
-                              </h2>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"              data-bs-target="#collapseOne"aria-expanded="true"     aria-controls="collapseOne">
+                                            Come aggiungere un nuovo studente? 
+                                    </button>
+                                </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, quod! At animi sunt perferendis dicta  ipsam     repudiandae, aspernatur cupiditate odio atque non, laudantium ducimus ipsa. Aliquam quidem   quasivitae     praesentium.
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"        aria-expanded="false" aria-controls="collapseTwo">
-                                    Come posso accedere alle informazioni del mio account?
-                                </button>
-                              </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum, dolorum voluptates et corporis minus         assumenda     consequatur laborum unde. Eaque omnis, porro odit accusantium debitis vitae veniam molestiae vero     fuga?
+                                    <div class="accordion-body ms-3">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, quod! At animi sunt perferendis dicta
+                                        ipsam repudiandae, aspernatur cupiditate odio atque non, laudantium ducimus ipsa. Aliquam quidem   
+                                        quasivitae praesentium.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"        aria-expanded="false" aria-controls="collapseThree">
-                                   Posso usare questa Dashboard da mobile?
-                                </button>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"  
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body ms-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum, dolorum voluptates et corporis minus 
+                                    assumenda consequatur laborum unde. Eaque omnis, porro odit accusantium debitis vitae veniam molestiae 
+                                    vero fuga?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Posso usare questa Dashboard da mobile?
+                                    </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui minima officia, alias reiciendispariatur           suntquo praesentium soluta enim fugiat nemo culpa animi fuga sapiente eos? Pariatur, nequemaxime!
+                                    <div class="accordion-body ms-3">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui minima officia, alias 
+                                        reiciendispariatur suntquo praesentium soluta enim fugiat nemo culpa animi fuga sapiente eos? 
+                                        Pariatur, nequemaxime!
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>    
+                </div>
+
+                <!-- *ANCHOR todo  e stats -->
+                 <!-- todo  -->
+                <div class="mx-4">
+                    <div class="text-dark bg-secondary bg-opacity-10 p-2 rounded-top border">
+                        <h3>Todo</h3>
+                    </div>
+                    <div class="border p-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                              <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                              <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                              <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>

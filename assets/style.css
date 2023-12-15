@@ -9,10 +9,6 @@ a{
     color: white;
 }
 
-
-main{
-    height:calc(100vh - 80px);
-}
 aside{
     display: flex;
     flex-direction: column;
