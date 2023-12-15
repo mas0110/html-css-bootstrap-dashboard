@@ -1,6 +1,4 @@
-.logo-img{
-    min-width: 50px;
-}
+
 ul{
     list-style: none;
     
@@ -13,7 +11,7 @@ a{
 
 
 main{
-    height: 95vh;
+    height:calc(100vh - 80px);
 }
 aside{
     display: flex;
@@ -23,6 +21,8 @@ aside{
     height: 100%;
     background-color: #061E34;
     background-image: url(./img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     width: 10%;
 }
 

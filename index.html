@@ -22,50 +22,64 @@
 </head>
 <body>
     <div class="main container-fluid p-0">
-        <header  class="px-2">
-            <nav class="navbar">
+        <header  class="px-2" style="height: 80px;">
+            <nav class="navbar flex-nowrap w-100">
                 <div class="container-fluid">
-                    <div class="row  container align-items-center justify-content-between">
+                    <div class="row   w-100 align-items-baseline justify-content-between">
                         <div class="col-2 p-0 col-md-2">
-                            <a class="navbar-brand d-block  d-md-none"><img class="logo-img img-fluid" src="./assets/img/mobile-logo.png" alt="mobile-logo"></a>
-                            <a class="navbar-brand d-none  d-md-block"><img class="logo-img img-fluid" src="./assets/img/logo.svg" alt="logo"></a>
+                            <a class="navbar-brand d-block  d-lg-none"><img class="img-fluid" style="height: 60px; min-width: 60px;" src="./assets/img/mobile-logo.png" alt="mobile-logo"></a>
+                            <a class="navbar-brand d-none  d-lg-block"><img class="img-fluid" style="height: 60px;" src="./assets/img/logo.svg" alt="logo"></a>
                         </div>
                         <div class="col-9 p-0 col-md-8">
                             <form class="d-flex" role="search">
-                                <input class="form-control me-2 bg-secondary bg-opacity-25" type="search" placeholder=" Prova a cercare: Lezioni di Laravel" aria-label="Search"> 
+                                <div class="input-group">
+                                    <span class="input-group-text bg-secondary bg-opacity-25 border-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <div class="form-floating overflow-auto">
+                                      <input type="text" class="form-control bg-secondary bg-opacity-25" id="floatingInputGroup1" placeholder="Prova a cercare:Lezioni di Laravel">
+                                      <label for="floatingInputGroup1">Prova a cercare:Lezioni di Laravel</label>
+                                    </div>
+                                  </div>
                             </form>
                         </div>
-                        <div class="col-1 p-0 col-md-2 d-flex">
-                            <button class="bg-light border border-0 d-none  d-lg-block">
-                                <i class="fa-solid fa-list-ul"></i>
-                            </button>
-                            <button class="bg-light border border-0 d-none  d-lg-block px-2">
-                                <i class="fa-solid fa-circle-question" style="color: #606060;"></i>
-                            </button>
-                            <button class="bg-light border border-0 d-none  d-lg-block px-2">
-                                <i class="fa-solid fa-ellipsis-vertical" style="color: #7a7a7a;"></i>
-                            </button>
-                            <button class="bg-light border border-0">
-                                <i class="fa-solid fa-bell" style="color: #ff9300;"></i>
-                            </button>
+                        <div class="col-1 p-0 col-md-2 d-flex justify-content-center">
+
+                            <div class="dropdown d-flex">
+                                <button class="bg-white border border-0 d-none  d-lg-block">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </button>
+                                <button class="bg-white border border-0 d-none  d-lg-block px-2">
+                                    <i class="fa-solid fa-circle-question" style="color: #606060;"></i>
+                                </button>
+                                <button class="bg-white border border-0 d-none  d-lg-block px-2">
+                                    <i class="fa-solid fa-ellipsis-vertical" style="color: #7a7a7a;"></i>
+                                </button>
+                                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell" style="color: #ff9300;"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                  <li d-none  d-lg-block><a class="dropdown-item" href="#">Action</a></li>
+                                  <li d-none  d-lg-block><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li d-none  d-lg-block><a class="dropdown-item" href="#">Something else here</a>
+                                </ul>
+                              </div>
                         </div>
                     </div>
                 </div>
-              </nav>
+            </nav>
         </header>
         <main class="position-relative">
             <aside class="text-light text-center">
-                <ul class="mb-5 p-1">
-                    <li><i class="fa-solid fa-house d-inline"></i><span class="d-none d-lg-block"> home</span></li>
-                    <li><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-block"> stats</span></li>
-                    <li><i class="fa-solid fa-signal"></i><span class="d-none d-lg-block"> signals</span></li>
+                <ul class="mb-5 p-2">
+                    <li class="d-flex gap-2 py-1 justify-content-center align-content-center"><i class="fa-solid fa-house d-inline"></i><span class="d-none d-lg-block"> home</span></li>
+                    <li class="d-flex gap-2 py-1 justify-content-center align-content-center"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-block"> stats</span></li>
+                    <li class="d-flex gap-2 py-1 justify-content-center align-content-center"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-block"> signals</span></li>
                 </ul>
                 <ul class="p-1">
-                    <li><i class="fa-solid fa-gear"></i><span class="d-none d-lg-block"> admin</span></li>
+                    <li class="d-flex gap-2 justify-content-center align-content-center"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-block"> admin</span></li>
 
                 </ul>
             </aside>
-            <div class="center p-1 text-light">
+            <div class="center px-1 text-light">
                 <div class="row  bg-primary">
                     <div class="col-12 col-sm-4">
                         <span>nuovo studente</span>
